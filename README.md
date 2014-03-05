@@ -2,3 +2,28 @@ bitwise
 =======
 
 Command line bitwise operations over files and streams for Linux/GNU
+
+Dependencies
+============
+
+There are a few things that are needed before the build will work...
+
+$ sudo apt-get install -y build-essential autoconf automake
+
+build-essential will get you things like gcc, g++, and make.
+
+How to build
+============
+
+Below are the commands that need to be executed in the top level directory to
+create the executable.
+
+$ aclocal
+$ autoconf
+$ automake --add-missing
+$ ./configure
+$ make
+$ sudo make install
+
+This will put the executable in /usr/local/bin
+
